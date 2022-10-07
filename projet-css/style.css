@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Courier New', Courier, monospace;
+    padding: 10px;
+ }
+ a{
+    text-decoration: none;
+}
+.header .nav{
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+
+}
+.header .nav > li{
+    display: inline-block;
+    
+    text-align: right;
+}
+.header .nav > li > a{
+    color: rgb(19, 18, 20);
+    text-decoration: none; 
+    padding: 30px 15px;
+    display: block;
+    font-size: 20 px;
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after{
+    content: "";
+    display: block;
+    
+    height: 3px;
+    margin-top:2px ;
+    background-color: blue;
+    transition: width 0.5s;
+}
+.header .nav > li > a.active:after{
+    width: 100%;
+    
+}
+
+.header .nav > li > a:after{
+    
+    width: 0%;
+    
+}
+.header .nav > li > a:hover:after{
+    width: 100%;
+}
+
+#home{
+    text-align: center;
+    transform: translate(-10,-50%);
+}
+ h1{
+    color: rgb(61, 33, 33);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+ p{
+    color: brown;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    border-radius: 30px;
+}
+#about{
+ background-color: aqua; 
+ width: 35%;  
+}
+#work{
+    background-color: rgb(22, 26, 26); 
+    width: 30%;  
+}
+#resume{
+    background-color: rgb(15, 70, 70); 
+    width: 40%;  
+}
+#contact{
+    background-color: rgb(168, 205, 205); 
+    width: 40%; 
+    height: 40%;
+}
+#contact h3{
+    color: rgb(61, 33, 33);
+    
+    text-transform: uppercase;
+}
+form {
+    background-color:#FAFAFA;
+    padding:10px;
+    width:280px;
+    }
+label {
+    margin-top:10px;
+    display:block;
+}    
+[type=submit]{
+    width:100px;
+    margin-left:5px;
+    box-shadow:1px 1px 1px #131010;
+    cursor:pointer;
+    }
+footer{
+position: fixed; 
+padding: 10px 10px 10px 10px; 
+bottom: 0;
+left: 0;
+width: 100%; 
+height: 40px; 
+background: lightgrey; 
+}
+
+
+
+
+
+
+
+
+
